@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>AsterCare | Simple Healthcare Website</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-content">
+        <a class="logo" href="#home">
+          <svg
+            class="logo-icon"
+            viewBox="0 0 40 40"
+            role="img"
+            aria-label="AsterCare logo">
+            <rect width="40" height="40" rx="11" fill="#4338ca"></rect>
+            <path
+              d="M20 10v20M10 20h20"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+          <span>AsterCare</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div>
+            <p class="tag">Care that comes together</p>
+            <h1>Healthcare made easier, wherever you are.</h1>
+            <p class="intro">
+              AsterCare helps people connect with caring health professionals
+              online and find a clear next step.
+            </p>
+            <a class="button" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="care-panel">
+            <img
+              class="hero-photo"
+              src="doctor6.avif"
+              alt="A doctor speaking with a patient during an online visit"
+            />
+            <div class="photo-label">
+              <strong>Care from a real person</strong>
+              <p>Support from the comfort of home.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOCTOR TELE-CARDIOLOGY SECTION -->
+      <section class="telecardiology-section" id="telecardiology">
+        <div class="container">
+          <div class="tele-doctor-card">
+
+            <div class="tele-doctor-profile">
+              <div class="tele-doctor-image">
+                <img src="dr.shair2.jpeg" alt="Tele-cardiology doctor" />
+                <span class="tele-online-dot"></span>
+              </div>
+
+              <div class="tele-doctor-info">
+                <h2>Dr. Shair Ismail, MD</h2>
+                <p>Chief of Tele-Cardiology · Panjab Medical Fellow</p>
+
+                <div class="tele-rating">
+                  <span>★</span>
+                  <strong>4.9</strong>
+                  <span>(520+ consults)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="telemetry-panel">
+              <div class="telemetry-header">
+                <div class="stream-status">
+                  <span class="status-dot"></span>
+                  LIVE TELEMETRY STREAM
+                </div>
+
+                <span class="latency">LATENCY: 14ms</span>
+              </div>
+
+              <div class="tele-metrics">
+                <div class="tele-metric-box">
+                  <h3>HEART RATE</h3>
+                  <p><strong>72</strong> <span>BPM</span></p>
+                </div>
+
+                <div class="tele-metric-box oxygen">
+                  <h3>SpO2 LEVEL</h3>
+                  <p><strong>98.5</strong> <span>%</span></p>
+                </div>
+
+                <div class="tele-metric-box">
+                  <h3>BP INDEX</h3>
+                  <p><strong>118/76</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tele-appointment">
+              <span>Next Immediate Slot:</span>
+              <strong id="tele-slot-time">14:15 EST (In 18 mins)</strong>
+            </div>
+
+            <button type="button" class="tele-video-button" id="tele-video-btn">
+              Initiate Secure Video Visit
+            </button>
+
+            <div class="tele-security-badge">
+              <span class="tele-shield">♢</span>
+              HIPAA ♢ HL7 Certified Tier-3
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services container" id="services">
+        <p class="tag">How we help</p>
+        <h2 class="section-title">Our services</h2>
+        <p class="section-intro">Simple support for your next step in care.</p>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Online visits</h3>
+            <p>
+              Speak with a health professional through a virtual appointment.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3>Specialist support</h3>
+            <p>Get help finding the right specialist for your needs.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Care coordination</h3>
+            <p>Understand your options and plan what to do next.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container team-section">
+        <img
+          class="team-photo"
+          src="doctor7.avif"
+          alt="A healthcare team discussing a patient's care plan"
+        />
+        <div class="team-copy">
+          <p class="tag">Better care, together</p>
+          <h2 class="section-title">Health care is a team effort.</h2>
+          <p>
+            Our care team helps people understand their options and feel
+            supported through each step.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <p class="tag">We're here to help</p>
+          <h2 class="section-title">Have a question or need an appointment?</h2>
+          <p class="section-intro">
+            Fill out the form below to send us a message.
+          </p>
+
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="John Doe"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="john@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Select Service</label>
+              <select id="service" name="service">
+                <option value="online-visit">Online Visit</option>
+                <option value="specialist">Specialist Support</option>
+                <option value="coordination">Care Coordination</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message / Symptoms</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                placeholder="How can we help you?"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button">Send Message</button>
+          </form>
+
+          <div style="margin-top: 2rem">
+            <p>Or reach out directly via email:</p>
+            <a class="button button-outline" href="mailto:hello@example.com"
+              >Email AsterCare</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>@ 2026 AsterCare. Simple care, made easier.</p>
+    </footer>
+  </body>
+</html>
